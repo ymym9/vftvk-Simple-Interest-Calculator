@@ -15,7 +15,7 @@ function compute(){
     return false
     }
 	else{
-	result = capital * Math.pow((1 + interest_rate * 0.01), investment_duration);
+	result = Math.round(capital * Math.pow((1 + interest_rate * 0.01), investment_duration));
 	current_date = new Date();
 	current_year = current_date.getFullYear();
 	
@@ -29,5 +29,7 @@ function compute(){
 }
 
 function update_range_value(){
-	
+	interest_rate = document.getElementById("rate").value;
+	output = interest_rate + "%";
+	document.getElementById("range_value").value = output;
 }

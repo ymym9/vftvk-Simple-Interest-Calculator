@@ -16,13 +16,13 @@
 				<span class="labels">
 				<label for="rate">Interest Rate</label>
 				</span>
-				<input type="range"  id="rate" name="rate" oninput="update_range_value" value="10.5">
-					<div id="range_value" name="range_value"></div>10.5% <br/>
+				<input type="range"  id="rate" name="rate" oninput="update_range_value()" value="10.5">
+				<input type="text" id="range_value" name="range_value" value="10.5%"></input><br/>
 				<span class="labels">
 				<label for="years">No. of Years</label>
 				</span>
-				<input type="text"  id="years" name="years" list="duration">  <br/>
-				<datalist id="duration">
+				<select  id="years" name="years" value="1">
+					<option>1</option>
 					<option>5</option>
 					<option>10</option>
 					<option>15</option>
@@ -31,13 +31,13 @@
 					<option>30</option>
 					<option>40</option>
 					<option>50</option>
-				</datalist>
-
+				</select> <br/>
 				<button onclick="compute()", id="compute_button">Compute Interest</button> <br>
 			
 				<span id="result" name="result"></span>
+				<footer>&copy; Everyone Can Get Rich </footer>
 			</div>
-			<footer>&copy; Everyone Can Get Rich </footer>
+			
 		</div>
     </body>
 </html>

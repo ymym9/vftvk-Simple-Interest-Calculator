@@ -1,22 +1,23 @@
 /* Tag  */
 body {background-color:black;}
 h1{color:grey; font-size:250%; font-family:tahoma; text-align:center; padding-top:5%;}
-label{font-family:arial;}
-footer{font-family:arial; position:absolute;}
-input{content-align:left; width:150; position:relative; left:35%;}
-label,input,button{}
+label{font-family:arial; width:250; display:inline-block;}
+footer{font-family:arial;position:absolute; left:-38%; margin-top:10%}
+input{width:150; height:30px; font-size:65%}
+label,input,button{margin-top:1%; margin-bottom:1%}
+select{height:30px; width:50px;font-size:65%}
 
 /* Class */
-.labels{}
 .highlighted{background-color:yellow}
 
 /* ID */
-#main_div{background-color:white; width:90%; height:90%; margin-top:1%; margin-left:5%; margin-right:5%; border-radius:8%; position:relative;}
-#main_content{position:absolute}
-#result{font-family:arial; }
-#compute_button{font-family:arial;}
+#main_div{background-color:white; width:90%; height:90%; margin-top:1%; margin-left:5%; 
+margin-right:5%; border-radius:5%; position:relative; font-size:200%}
+#main_content{position:absolute; left:30%}
+#range_value{border:none; width:65px}
 #years{width:50}
-#range_value{position:absolute}
+#compute_button{font-family:arial;width:250;height:45;font-size:90%}
+#result{font-family:arial;}
 
 
 
